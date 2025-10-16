@@ -29,10 +29,12 @@ export default function RootLayout({
   return (
     <html lang="zh-TW">
       <body
-        className={`${notoSerif.variable} ${notoSans.variable} font-sans antialiased`}
+        className={`${notoSerif.variable} ${notoSans.variable} font-sans antialiased `}
       >
         <Header />
-        <main className="pt-16">{/* Add padding top to avoid content being hidden by fixed header */}
+
+        <main className="z-0 ">
+          {/* Add padding top to avoid content being hidden by fixed header */}
           {children}
         </main>
         <Footer />
