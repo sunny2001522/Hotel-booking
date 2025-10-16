@@ -3,6 +3,7 @@ import React from "react";
 
 import { Filter } from "@/components/feature/Filter";
 import RoomList from "@/components/feature/RoomList";
+export const dynamic = "force-dynamic";
 
 const RoomsPage = () => {
   return (
